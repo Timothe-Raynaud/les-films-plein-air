@@ -3899,6 +3899,13 @@ textarea.form-control-lg {
   display: block;
 }
 
+.nav-hover:hover {
+  padding-left: 4px;
+}
+.nav-hover:hover a {
+  padding: 2px 7px;
+}
+
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
