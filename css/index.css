@@ -7676,6 +7676,10 @@ textarea.form-control-lg {
   width: 25% !important;
 }
 
+.w-49 {
+  width: 49% !important;
+}
+
 .w-50 {
   width: 50% !important;
 }
