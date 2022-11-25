@@ -10,92 +10,79 @@
 
   <body class="position-relative bg-light">
 
-    <div class="position-absolute top-0 start-0">
-      <div id="wheel-top" class="position-relative position-absolute">
-            <div class="top-hole"></div>
-            <div class="right-hole"></div>
-            <div class="bottom-hole"></div>
-            <div class="left-hole"></div>
-      </div>
-      <div id="camera" class="position-relative">
-        <div id="cam-body"></div>
-        <div id="focal-1"></div>
-        <div id="focal-2"></div>
-        <div class="projection-1"></div>
-        <div class="projection-2"></div>
-        <div class="projection-3"></div>
-        <div class="projection-4"></div>
-      </div>
-      <div id="wheel-bottom" class="position-relative position-absolute">
-        <div class="top-hole"></div>
-        <div class="right-hole"></div>
-        <div class="bottom-hole"></div>
-        <div class="left-hole"></div>
-      </div>
-    </div>
-
-    <header id="header" class="border-bottom shadow-sm bg-white">
-      <div class="position-absolute end-0 top-0">
-        <button type="button" class="btn fw-bold border shadow-sm mx-4 my-2 px-2 py-1" >Connexion</button>
-      </div>
-      <div class="container">
-        <div id="logo" class="row w-100 text-center m-auto">
-          <a href="#"><img src="images/logo.png" class="col-md-4 mt-md-1 mb-md-2" alt="logo"></a>
+  <header id="header" class="border-bottom shadow-sm bg-white">
+      <div class="container-fluid">
+        <div id="logo" class="row justify-content-center">
+          <div class="col-xl-1 col-lg-2 col-8 text-center">
+            <button type="button" class="btn fw-bold border mt-3 shadow-sm px-2 py-1 w-100" >Connexion</button>
+          </div>
+          <div class="col-xl-3 col-lg-2"></div>
+          <div class="col-lg-4 col-8">
+            <a href="#"><img src="images/logo.png" class="w-100 mt-md-1 mb-md-2" alt="logo"></a>
+          </div>
+          <div class="col-lg-4"></div>
         </div>
         <nav id="menu" class="row mb-1">
           <ul class="row justify-content-center text-center">
-            <li class="col-md-2 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="#">Accueil</a></li>
-            <li class="col-md-2 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="pages/actualites.html">Actualités</a></li>
-            <li class="col-md-2 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="pages/programme.html">Programme</a></li>
+            <li class="col-lg-2 col-8 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="#">Accueil</a></li>
+            <li class="col-lg-2 col-8 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="pages/actualites.html">Actualités</a></li>
+            <li class="col-lg-2 col-8 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="pages/programme.html">Programme</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="container w-75 mt-4 mb-4">
+    <main class="container-fluid mt-4 mb-4">
 
-      <div id="carouselHome" class="carousel slide row m-auto" data-bs-ride="carousel">
-        <div class="carousel-inner ">
-          <div class="carousel-item active">
-            <img src="images/1.jpg" class="d-block img-fluid rounded " alt="1">
+      <div class="row justify-content-center gx-5 gy-4">
+
+        <div class="col-10">
+          <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block w-100 rounded" alt="1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <div class="row gx-md-5 my-4">
-        <div class="col-md-6 border rounded shadow bg-white p-4">
+        <div class="col-xl-5 col-10 border rounded shadow bg-white p-4">
           <h2 class="text-center"><span class="bg-primary-g">Lorem ipsum dolor</span></h2>
           <p class="mt-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae distinctio dolores fuga in, maiores maxime necessitatibus numquam perspiciatis quia quidem, soluta sunt tenetur! Debitis ducimus explicabo harum quidem voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae distinctio dolores fuga in, maiores maxime necessitatibus numquam perspiciatis quia quidem, soluta sunt tenetur! Debitis ducimus explicabo harum quidem voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae distinctio dolores fuga in, maiores maxime necessitatibus numquam perspiciatis quia quidem, soluta sunt tenetur! Debitis ducimus explicabo harum quidem voluptas!
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-xl-5 col-10">
           <img src="images/2.jpg" alt="2" class="d-block img-fluid rounded shadow h-100">
         </div>
+
+        <div class="col-10 ">
+          <iframe class="d-block w-100 rounded shadow" height="300px" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+
       </div>
 
-      <iframe class="d-block w-100 row rounded shadow" height="300px" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe>
     </main>
 
     <footer class="w-100 border-top pt-2 shadow bg-white">
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 text-center">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
           <ul class="text-center list-unstyled d-flex justify-content-center">
             <li class=""><a href="#" class="text-decoration-none text-dark me-2">Contact</a></li>
             <li class=""> | </li>
             <li class=""><a href="#" class="text-decoration-none text-dark ms-2">Informations</a></li>
           </ul>
         </div>
-        <div class="col-md-4 text-end">
+        <div class="col-4 text-end">
           <p class="fs-6 pe-4">&copy Les films plein air</p>
         </div>
       </div>

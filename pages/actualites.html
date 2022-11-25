@@ -10,87 +10,91 @@
 
 <body class="position-relative bg-light">
 
-<div class="position-absolute top-0 start-0">
-    <div id="wheel-top" class="position-relative position-absolute">
-        <div class="top-hole"></div>
-        <div class="right-hole"></div>
-        <div class="bottom-hole"></div>
-        <div class="left-hole"></div>
-    </div>
-    <div id="camera" class="position-relative">
-        <div id="cam-body"></div>
-        <div id="focal-1"></div>
-        <div id="focal-2"></div>
-        <div class="projection-1"></div>
-        <div class="projection-2"></div>
-        <div class="projection-3"></div>
-        <div class="projection-4"></div>
-    </div>
-    <div id="wheel-bottom" class="position-relative position-absolute">
-        <div class="top-hole"></div>
-        <div class="right-hole"></div>
-        <div class="bottom-hole"></div>
-        <div class="left-hole"></div>
-    </div>
-</div>
-
 <header id="header" class="border-bottom shadow-sm bg-white">
-    <div class="position-absolute end-0 top-0">
-        <button type="button" class="btn fw-bold border shadow-sm mx-4 my-2 px-2 py-1" >Connexion</button>
-    </div>
-    <div class="container">
-        <div id="logo" class="row w-100 text-center m-auto">
-            <a href="../index.html"><img src="../images/logo.png" class="col-md-4 mt-md-1 mb-md-2" alt="logo"></a>
+    <div class="container-fluid">
+        <div id="logo" class="row justify-content-center">
+            <div class="col-xl-1 col-lg-2 col-8 text-center">
+                <button type="button" class="btn fw-bold border mt-3 shadow-sm px-2 py-1 w-100" >Connexion</button>
+            </div>
+            <div class="col-xl-3 col-lg-2"></div>
+            <div class="col-lg-4 col-8">
+                <a href="../index.html"><img src="../images/logo.png" class="w-100 mt-md-1 mb-md-2" alt="logo"></a>
+            </div>
+            <div class="col-lg-4"></div>
         </div>
         <nav id="menu" class="row mb-1">
             <ul class="row justify-content-center text-center">
-                <li class="col-md-2 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="../index.html">Accueil</a></li>
-                <li class="col-md-2 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="#">Actualités</a></li>
-                <li class="col-md-2 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="programme.html">Programme</a></li>
+                <li class="col-lg-2 col-8 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="../index.html">Accueil</a></li>
+                <li class="col-lg-2 col-8 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="actualites.html">Actualités</a></li>
+                <li class="col-lg-2 col-8 list-unstyled nav-hover"><a class="text-decoration-none text-dark bg-primary-y fs-3 ps-2 pe-2 shadow-sm" href="programme.html">Programme</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<main class="w-75 mt-4 mb-4 m-auto">
+<main class="container-fluid mt-4 mb-4">
 
-    <div class="d-flex flex-column flex-lg-row justify-content-between align-content-center flex-wrap mb-4">
-        <div class="text-center w-49 p-4 rounded border bg-white shadow">
-            <h2 class="mb-4"><span class="bg-primary-g">Hello world</span></h2>
-            <p class="text-start">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa distinctio eius eligendi, est exercitationem fugiat fugit iusto laborum molestias neque officia quas quod rerum sint, unde veniam voluptatem!</span><span>Facilis inventore nulla quas rerum? Accusamus, autem consectetur delectus eum fuga, id impedit in iste laboriosam magni, nemo nisi nostrum placeat porro quisquam quos repellat tenetur velit veniam veritatis voluptas!</span><span>Amet asperiores commodi cum, delectus dolorem ea eveniet hic incidunt, inventore iure molestiae mollitia necessitatibus nihil, officiis pariatur perspiciatis praesentium quasi quis quos rem sequi soluta sunt totam ullam voluptatem?</span>
-            </p>
+    <div id="object-animate" class="position-relative m-auto">
+        <div id="wheel-top" class="position-relative position-absolute">
+            <div class="top-hole"></div>
+            <div class="right-hole"></div>
+            <div class="bottom-hole"></div>
+            <div class="left-hole"></div>
         </div>
-        <div class="w-49 rounded shadow">
-            <img src="../images/3.jpg" alt="3" class="w-100 h-100 rounded shadow">
+        <div id="camera" class="position-relative">
+            <div id="cam-body"></div>
+            <div id="focal-1"></div>
+            <div id="focal-2"></div>
+            <div class="projection-1"></div>
+            <div class="projection-2"></div>
+            <div class="projection-3"></div>
+            <div class="projection-4"></div>
+        </div>
+        <div id="wheel-bottom" class="position-relative position-absolute">
+            <div class="top-hole"></div>
+            <div class="right-hole"></div>
+            <div class="bottom-hole"></div>
+            <div class="left-hole"></div>
         </div>
     </div>
 
-    <div class="d-flex justify-content-between ju flex-wrap mt-4">
-        <div class="w-49 rounded shadow">
-            <img src="../images/4.jpg" alt="4" class="w-100 h-100 rounded shadow">
+    <div class="row justify-content-center gx-5 gy-4">
+
+        <div class="col-xl-5 col-10 border rounded shadow bg-white p-4">
+            <h2 class="text-center"><span class="bg-primary-g">Lorem ipsum dolor</span></h2>
+            <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae distinctio dolores fuga in, maiores maxime necessitatibus numquam perspiciatis quia quidem, soluta sunt tenetur! Debitis ducimus explicabo harum quidem voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae distinctio dolores fuga in, maiores maxime necessitatibus numquam perspiciatis quia quidem, soluta sunt tenetur! Debitis ducimus explicabo harum quidem voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae distinctio dolores fuga in, maiores maxime necessitatibus numquam perspiciatis quia quidem, soluta sunt tenetur! Debitis ducimus explicabo harum quidem voluptas!
+            </p>
         </div>
-        <div class="text-center w-49 p-4 rounded border bg-white shadow">
-            <h2 class="mb-4"><span class="bg-primary-g">Title</span></h2>
-            <p class="text-start">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa distinctio eius eligendi, est exercitationem fugiat fugit iusto laborum molestias neque officia quas quod rerum sint, unde veniam voluptatem!</span><span>Facilis inventore nulla quas rerum? Accusamus, autem consectetur delectus eum fuga, id impedit in iste laboriosam magni, nemo nisi nostrum placeat porro quisquam quos repellat tenetur velit veniam veritatis voluptas!</span><span>Amet asperiores commodi cum, delectus dolorem ea eveniet hic incidunt, inventore iure molestiae mollitia necessitatibus nihil, officiis pariatur perspiciatis praesentium quasi quis quos rem sequi soluta sunt totam ullam voluptatem?</span><span>Facilis inventore nulla quas rerum? Accusamus, autem consectetur delectus eum fuga, id impedit in iste laboriosam magni, nemo nisi nostrum placeat porro quisquam quos repellat tenetur velit veniam veritatis voluptas!</span><span>Amet asperiores commodi cum, delectus dolorem ea eveniet hic incidunt, inventore iure molestiae mollitia necessitatibus nihil, officiis pariatur perspiciatis praesentium quasi quis quos rem sequi soluta sunt totam ullam voluptatem?</span>
+
+        <div class="col-xl-5 col-10">
+            <img src="../images/3.jpg" alt="2" class="d-block img-fluid rounded shadow h-100">
+        </div>
+
+        <div class="col-xl-5 col-10">
+            <img src="../images/4.jpg" alt="2" class="d-block img-fluid rounded shadow h-100">
+        </div>
+
+        <div class="col-xl-5 col-10 border rounded shadow bg-white p-4">
+            <h2 class="text-center"><span class="bg-primary-g">Lorem ipsum dolor</span></h2>
+            <p class="mt-4 align-content-center">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illum ipsam nostrum sunt tenetur vel. Consequuntur dignissimos dolorum, eaque fuga nemo voluptatem voluptates? Ad iste laudantium nesciunt officiis quibusdam quidem!</span><span>Asperiores dignissimos earum neque! Ad consectetur illum repudiandae voluptate. Ad aliquid aperiam beatae impedit labore laborum nisi quae, saepe vitae. Consequuntur dolorem doloremque dolorum excepturi nesciunt nobis obcaecati optio sunt!</span><span>Accusamus atque dignissimos eligendi fuga incidunt itaque labore, maxime molestias mollitia nulla officia qui sapiente sequi sit voluptatem. Beatae est ipsa ipsam minima molestiae nobis quod reprehenderit repudiandae sit voluptatum?</span><span>Ab aspernatur beatae blanditiis consequatur cumque eaque eos et hic impedit incidunt molestiae officia officiis optio praesentium quae quos saepe, sapiente sunt totam ullam. Alias aperiam ea itaque quis recusandae!</span><span>Ad aliquid asperiores commodi consequuntur cum eius esse eveniet excepturi explicabo hic incidunt labore magnam maxime mollitia nesciunt odit officiis perspiciatis provident quasi quia quisquam recusandae temporibus, tenetur. Ex, quia?</span>
             </p>
         </div>
     </div>
 
 </main>
-
 <footer class="w-100 border-top pt-2 shadow bg-white">
     <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 text-center">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
             <ul class="text-center list-unstyled d-flex justify-content-center">
                 <li class=""><a href="#" class="text-decoration-none text-dark me-2">Contact</a></li>
                 <li class=""> | </li>
                 <li class=""><a href="#" class="text-decoration-none text-dark ms-2">Informations</a></li>
             </ul>
         </div>
-        <div class="col-md-4 text-end">
+        <div class="col-4 text-end">
             <p class="fs-6 pe-4">&copy Les films plein air</p>
         </div>
     </div>
